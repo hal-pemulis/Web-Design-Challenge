@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Visualization Dashboard</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <a href="landing.html" class="col-lg-2 homebutton">Lattitude</a>
+            <div class="col-lg-7"></div>
+            <div class="btn-group">
+                <a class="btn dropdown-toggle topmenu" data-toggle="dropdown" href="#">
+                    Plots
+                    <span class="caret"></span>
+                  </a>
+                  <ul class="dropdown-menu">
+                    <!-- dropdown menu links -->
+                    <a href="temp.html">Lattitude vs. Max Temp</a>
+                    <a href="humidity.html">Lattitude vs. Max Humidity</li>
+                    <a href="clouds.html">Lattitude vs. Cloudiness</li>
+                    <a href="wind.html">Lattitude vs. Wind Speed</li>
+                  </ul>
+                <a href="comparisons.html" class="btn topmenu">Comparison</a>
+                <a href="data.html" class="btn topmenu">Data</a>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-12 body">
+                <br>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-12 midtitle">Comparison: Lattitude vs. X</div>
+        </div>
+        <div class="row">
+            <hr class="col-lg-12">
+        </div>
+        <div class="row">
+            <div class="col-lg-12">Click any graph to get an in-depth analysis</div>
+        </div>
+        <div class="row">
+            <a href="temp.html" class="col-lg-6 midtitle">vs. Max Temperature</a>
+            <a href="humidity.html" class="col-lg-6 midtitle">vs. Humidity</a>
+        </div>
+        <div class="row">
+            <a href="temp.html" class="col-lg-6"><img width=500 src="../Resources/assets/images/Fig1.png"></a>
+            <a href="humidity.html" class="col-lg-6"><img width=500 src="../Resources/assets/images/Fig2.png"></a>
+        </div>
+        <div class="row">
+            <a href="clouds.html" class="col-lg-6 midtitle">vs. Cloudiness</a>
+            <a href="wind.html" class="col-lg-6 midtitle">vs. Wind Speed</a>
+        </div>
+        <div class="row">
+            <a href="clouds.html" class="col-lg-6"><img width=500 src="../Resources/assets/images/Fig3.png"></a>
+            <a href="wind.html" class="col-lg-6"><img width=500 src="../Resources/assets/images/Fig4.png"></a>
+        </div>
+    </div>
+</body>
+</html>

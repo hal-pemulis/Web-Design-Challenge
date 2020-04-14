@@ -1,0 +1,36 @@
+.homebutton {
+    background-color: aqua;
+    font-size: x-large;
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+    font-size: x-large;
+}
+
+.body {
+    background-color: lightgrey;
+}
+
+.midtitle {
+    font-size: xx-large;
+    text-align: left;
+    background-color: white;
+    color: aqua;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+    font-size: xx-large;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.midtitlesmall {
+    font-size: large;
+    text-align: left;
+    background-color: white;
+    color: aqua;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+    font-size: xx-large;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
