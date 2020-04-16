@@ -11,34 +11,43 @@
 <body>
 
     <div class="container">
-        <div class="row">
-            <a href="landing.html" class="col-lg-2 homebutton">Lattitude</a>
-            <div class="col-lg-7"></div>
-            <div class="btn-group">
-                <a class="btn dropdown-toggle topmenu" data-toggle="dropdown" href="#">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <a class="navbar-brand homebutton" href="landing.html">Lattitude</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="col-7"></div>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav mr-auto">
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                     Plots
-                    <span class="caret"></span>
                   </a>
-                  <ul class="dropdown-menu">
-                    <!-- dropdown menu links -->
-                    <a href="temp.html">Lattitude vs. Max Temp</a>
-                    <a href="humidity.html">Lattitude vs. Max Humidity</li>
-                    <a href="clouds.html">Lattitude vs. Cloudiness</li>
-                    <a href="wind.html">Lattitude vs. Wind Speed</li>
-                  </ul>
-                <a href="comparisons.html" class="btn topmenu">Comparison</a>
-                <a href="data.html" class="btn topmenu">Data</a>
+                  <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <a class="dropdown-item" href="temp.html">Lattitude vs. Max Temp</a>
+                    <a class="dropdown-item" href="humidity.html">Lattitude vs. Max Humidity</a>
+                    <a class="dropdown-item" href="clouds.html">Lattitude vs. Cloudiness</a>
+                    <a class="dropdown-item" href="wind.html">Lattitude vs. Wind Speed</a>
+                  </div>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="comparisons.html">Comparisons</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="data.html">Data</a>
+                </li>
+              </ul>
             </div>
-        </div>
+        </nav>
         <div class="row">
             <div class="col-lg-12 body">
                 <br>
             </div>
         </div>
         <div class="row">
-            <div class="col-lg-7 midtitle">Max Temperature</div>
-            <div class="col-lg-1 body"></div>
-            <div class="col-lg-2 midtitle">Vizualizations</div>
+            <div class="col-lg-7 midtitle">Temperature</div>
+            <div class="col-lg-1 d-none d-lg-block body"></div>
+            <div class="col-lg-2 midtitle d-none d-lg-block">Vizualizations</div>
         </div>
         <div class="row">
             <div class="col-lg-5"></div>
@@ -46,22 +55,32 @@
             <div class="col-lg-1 body"></div>
        </div>
         <div class="row">
-            <a href="temp.html" class="col-lg-3"><img width=600 src="../Resources/assets/images/Fig1.png"></a>
+            <a href="temp.html" class="col-lg-3 col-sm-12"><img width=600 src="../Resources/assets/images/Fig1.png"></a>
             <div class="col-lg-4"></div>
             <div class="col-lg-1 body"></div>
-            <a href="temp.html" class="col-lg-2"><img width=200 src="../Resources/assets/images/Fig1.png"></a>
-            <a href="humidity.html" class="col-lg-2"><img width=200 src="../Resources/assets/images/Fig2.png"></a>
+            <a href="temp.html" class="col-lg-2 d-none d-lg-block"><img width=200 src="../Resources/assets/images/Fig1.png"></a>
+            <a href="humidity.html" class="col-lg-2 d-none d-lg-block"><img width=200 src="../Resources/assets/images/Fig2.png"></a>
         </div>
         <div class="row">
-            <!-- <div class="col-lg-1"></div> -->
+            <div class="col-lg-7 col-sm-12">Temperature decreases as distance from the equator (x=0) increases. There is a stronger relationship between temp and latitude in the Northern Hemisphere than the Southern. This could be because there are fewer data points at extreme latitudes. Perhaps if Southern Hemisphere cities that are farther south were represented, the trends would be more similar.</div>
+            <div class="col-lg-1 d-none d-lg-block body"></div>
+            <a href="temp.html" class="col-2 d-none d-lg-block"><img width=200 src="../Resources/assets/images/Fig1.png"></a>
+            <a href="humidity.html" class="col-2 d-none d-lg-block"><img width=200 src="../Resources/assets/images/Fig2.png"></a>
+        </div>
+        <div class="row">
+            <div class="col-12 body"><br></div>
+        </div>
 
-            <div class="col-lg-7">Temperature decreases as distance from the equator (x=0) increases. There is a stronger relationship between temp and latitude in the Northern Hemisphere than the Southern. This could be because there are fewer data points at extreme latitudes. Perhaps if Southern Hemisphere cities that are farther south were represented, the trends would be more similar.</div>
-            <div class="col-lg-1 body"></div>
-            <a href="clouds.html" class="col-lg-2"><img width=200 src="../Resources/assets/images/Fig3.png"></a>
-            <a href="wind.html" class="col-lg-2"><img width=200 src="../Resources/assets/images/Fig4.png"></a>
+
+
+        <div class="col-6 midtitle d-lg-none">Vizualizations</div>
+        <div class="row">
+            <a href="temp.html" class="col-6 d-lg-none"><img width=200 src="../Resources/assets/images/Fig1.png"></a>
+            <a href="humidity.html" class="col-6 d-lg-none"><img width=200 src="../Resources/assets/images/Fig2.png"></a>
         </div>
         <div class="row">
-            <div class="col-lg-12 body"><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br></div>
+            <a href="clouds.html" class="col-6 d-lg-none"><img width=200 src="../Resources/assets/images/Fig3.png"></a>
+            <a href="wind.html" class="col-6 d-lg-none"><img width=200 src="../Resources/assets/images/Fig4.png"></a>
         </div>
 
     
